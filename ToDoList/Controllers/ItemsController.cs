@@ -13,12 +13,12 @@ namespace ToDoList.Controllers
      return View(category);
     }
 
-    [HttpPost("/items")]
-    public ActionResult Create(string description)
-    {
-      Item myItem = new Item(description);
-      return RedirectToAction("Index");
-    }
+    // [HttpPost("/items")]
+    // public ActionResult Create(string description)
+    // {
+    //   Item myItem = new Item(description);
+    //   return RedirectToAction("Index");
+    // }
 
     [HttpGet("/categories/{categoryId}/items/{itemId}")]
     public ActionResult Show(int categoryId, int itemId)
